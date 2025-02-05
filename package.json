@@ -1,0 +1,38 @@
+{
+  "name": "ai-wellness-companion2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --passWithNoTests",
+    "build": "echo 'No build step specified' && exit 0",
+    "start": "node server.js",
+"start": "node wellnessApp.js",
+"start": "node wellnessApp.js && start http://localhost:4000/motivation && start http://localhost:4000/affirmation && start http://localhost:4000/breathing"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JacksonKeeley/ai-wellness-companion2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JacksonKeeley/ai-wellness-companion2/issues"
+  },
+  "homepage": "https://github.com/JacksonKeeley/ai-wellness-companion2#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "directories": {
+    "test": "tests"
+  }
+}
